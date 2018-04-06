@@ -1,6 +1,6 @@
 # JIRA2DOC
 
-JIRA to Word Doc, Markdown, Text converter.
+JIRA to Word Doc, Markdown, Text converter. YMMV.
 
 Executes a query on JIRA, and downloads the results for conversion.
 
@@ -18,4 +18,4 @@ This tool requires:
    `export JUSER=user@company.com`
 1. `php jira2doc.php -p JIRA_PROJECT_KEY [-j "JQL"]`
     * JQL: Double-quotes in JQL must be escaped, or you may use single quotes.
-      * Default query: "Project = JIRA_PROJECT_KEY AND Type in (Story, Task) AND Status NOT IN (Done) ORDER BY Sprint, Rank"
+      * Default query: `"Project = JIRA_PROJECT_KEY AND Type in (Story, Task) AND Status NOT IN (Done) ORDER BY Sprint, Rank"`
